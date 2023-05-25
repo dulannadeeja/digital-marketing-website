@@ -36,14 +36,18 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body style="background-image: url(./assets/images/hero-bg.png)">
+  <body>
     <!-- #---------- HEADER ----------# -->
     <header>
       <div class="container">
         <figure class="brand-logo">
           <img src="./assets/images/logo.svg" alt="Digimore" />
         </figure>
-        <nav class="navbar text-capitalize" data-navbar aria-label="navigation menu">
+        <nav
+          class="navbar text-capitalize"
+          data-navbar
+          aria-label="navigation menu"
+        >
           <ul class="nav-menu">
             <li class="nav-item">
               <a href="#home" class="nav-link">Home</a>
@@ -62,9 +66,21 @@
             </li>
           </ul>
         </nav>
-        <button class="nav-collapse-btn" data-nav-toggle aria-label="menu toggler">
-          <ion-icon class="expand-icon" name="menu-outline" aria-hidden="true"></ion-icon>
-          <ion-icon class="close-icon" name="close-outline" aria-hidden="true"></ion-icon>
+        <button
+          class="nav-collapse-btn"
+          data-nav-toggle
+          aria-label="menu toggler"
+        >
+          <ion-icon
+            class="expand-icon"
+            name="menu-outline"
+            aria-hidden="true"
+          ></ion-icon>
+          <ion-icon
+            class="close-icon"
+            name="close-outline"
+            aria-hidden="true"
+          ></ion-icon>
         </button>
         <div class="nav-cta-btn">
           <a href="#giveItAShot" class="btn btn-gradient">Give it a shot</a>
@@ -74,6 +90,7 @@
 
     <!-- #---------- MAIN ----------# -->
     <main>
+      <!-- #----------START HERO SECTION ----------# -->
       <section class="hero-section container section">
         <div class="hero-content card glass-card">
           <h1 class="section-title text-capitalize">
@@ -95,97 +112,327 @@
         <div class="hero-banner-wrapper blob-container">
           <div class="blob-content">
             <img src="./assets/images/hero-banner.png" alt="hero banner" />
-            <img src="./assets/images/hero-icon-1.png" alt="social media icon" class="social-icon">
-            <img src="./assets/images/hero-icon-2.png" alt="social media icon" class="social-icon">
-            <img src="./assets/images/hero-icon-3.png" alt="social media icon" class="social-icon">
+            <img
+              src="./assets/images/hero-icon-1.png"
+              alt="social media icon"
+              class="social-icon"
+            />
+            <img
+              src="./assets/images/hero-icon-2.png"
+              alt="social media icon"
+              class="social-icon"
+            />
+            <img
+              src="./assets/images/hero-icon-3.png"
+              alt="social media icon"
+              class="social-icon"
+            />
           </div>
-            <div class="blob">
-              <svg
-                viewBox="0 0 500 500"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="100%"
-                id="blobSvg"
-              >
-                <defs>
-                  <linearGradient
-                    id="gradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      style="stop-color: rgb(255, 95, 109)"
-                    ></stop>
-                    <stop
-                      offset="100%"
-                      style="stop-color: rgb(255, 195, 113)"
-                    ></stop>
-                  </linearGradient>
-                </defs>
-                <path fill="url(#gradient)">
-                  <animate
-                    attributeName="d"
-                    dur="20000ms"
-                    repeatCount="indefinite"
-                    values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
+          <div class="blob">
+            <svg
+              viewBox="0 0 500 500"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="100%"
+              id="blobSvg"
+            >
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 95, 109)"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(255, 195, 113)"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)">
+                <animate
+                  attributeName="d"
+                  dur="20000ms"
+                  repeatCount="indefinite"
+                  values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
                                 M455.5,306Q444,362,400,398Q356,434,303,456.5Q250,479,202,448Q154,417,104,390Q54,363,48.5,306.5Q43,250,52,195.5Q61,141,99.5,98.5Q138,56,194,59.5Q250,63,308,56.5Q366,50,394.5,100Q423,150,445,200Q467,250,455.5,306Z;
                                 M471,306.5Q445,363,401.5,400Q358,437,304,452.5Q250,468,203,440.5Q156,413,100.5,391Q45,369,52.5,309.5Q60,250,73.5,203Q87,156,123,124.5Q159,93,204.5,55.5Q250,18,311,28Q372,38,415,84Q458,130,477.5,190Q497,250,471,306.5Z;
                                 M438,300Q422,350,385.5,386Q349,422,299.5,451Q250,480,193.5,462.5Q137,445,104,399Q71,353,39,301.5Q7,250,37.5,197.5Q68,145,97,89.5Q126,34,188,18.5Q250,3,300,40Q350,77,389,112Q428,147,441,198.5Q454,250,438,300Z;
                                 M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
                                 M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z"
-                  ></animate>
-                </path>
-              </svg>
-            </div>
-            <!-- Adding Glow Effect to blob    -->
-            <div class="blob blob-effect">
-              <svg
-                viewBox="0 0 500 500"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="100%"
-                id="blobSvg"
-              >
-                <defs>
-                  <linearGradient
-                    id="gradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      style="stop-color: rgb(255, 95, 109)"
-                    ></stop>
-                    <stop
-                      offset="100%"
-                      style="stop-color: rgb(255, 195, 113)"
-                    ></stop>
-                  </linearGradient>
-                </defs>
-                <path fill="url(#gradient)">
-                  <animate
-                    attributeName="d"
-                    dur="20000ms"
-                    repeatCount="indefinite"
-                    values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
+                ></animate>
+              </path>
+            </svg>
+          </div>
+          <!-- Adding Glow Effect to blob    -->
+          <div class="blob blob-effect">
+            <svg
+              viewBox="0 0 500 500"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="100%"
+              id="blobSvg"
+            >
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 95, 109)"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(255, 195, 113)"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)">
+                <animate
+                  attributeName="d"
+                  dur="20000ms"
+                  repeatCount="indefinite"
+                  values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
                                 M455.5,306Q444,362,400,398Q356,434,303,456.5Q250,479,202,448Q154,417,104,390Q54,363,48.5,306.5Q43,250,52,195.5Q61,141,99.5,98.5Q138,56,194,59.5Q250,63,308,56.5Q366,50,394.5,100Q423,150,445,200Q467,250,455.5,306Z;
                                 M471,306.5Q445,363,401.5,400Q358,437,304,452.5Q250,468,203,440.5Q156,413,100.5,391Q45,369,52.5,309.5Q60,250,73.5,203Q87,156,123,124.5Q159,93,204.5,55.5Q250,18,311,28Q372,38,415,84Q458,130,477.5,190Q497,250,471,306.5Z;
                                 M438,300Q422,350,385.5,386Q349,422,299.5,451Q250,480,193.5,462.5Q137,445,104,399Q71,353,39,301.5Q7,250,37.5,197.5Q68,145,97,89.5Q126,34,188,18.5Q250,3,300,40Q350,77,389,112Q428,147,441,198.5Q454,250,438,300Z;
                                 M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
                                 M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z"
-                  ></animate>
-                </path>
-              </svg>
-            </div>
-          
+                ></animate>
+              </path>
+            </svg>
+          </div>
         </div>
       </section>
+      <!-- #----------END HERO SECTION ----------# -->
+
+      <!-- #----------START HOW-IT-WORKS SECTION ----------# -->
+      <section class="section process-section container">
+        <div class="section-header text-center">
+          <h2 class="section-title">How it works</h2>
+          <p class="section-subtitle">
+            Digimore is a digital marketing agency that helps you to promote
+            your business, increase traffic, and brand awareness.
+          </p>
+        </div>
+        <ul class="section-content-cards">
+          <li class="section-card">
+            <div class="card-icon">
+              <img
+                src="./assets/images/process-icon-1.png"
+                alt="social media icon"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">feasibility analysis</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quibusdam.
+              </p>
+            </div>
+          </li>
+          <li class="section-card">
+            <div class="card-icon">
+              <img
+                src="./assets/images/process-icon-2.png"
+                alt="social media icon"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">budget</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quibusdam.
+              </p>
+            </div>
+          </li>
+          <li class="section-card">
+            <div class="card-icon">
+              <img
+                src="./assets/images/process-icon-3.png"
+                alt="social media icon"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">campaign</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quibusdam.
+              </p>
+            </div>
+          </li>
+          <li class="section-card">
+            <div class="card-icon">
+              <img
+                src="./assets/images/process-icon-4.png"
+                alt="social media icon"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">fast grove</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quibusdam.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="section-banner">
+          <img
+            src="./assets/images/process-banner.png"
+            alt="how it works image"
+          />
+        </div>
+      </section>
+      <!-- #----------END HOW-IT-WORKS SECTION ----------# -->
+
+      <!-- #----------START PORTFOLIO SECTION ----------# -->
+      <section class="section portfolio-section container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Portfolio</h2>
+          <p class="section-subtitle">
+            Digimore is a digital marketing agency that helps you to promote
+            your business, increase traffic, and brand awareness.
+          </p>
+        </div>
+        <ul class="section-content-cards">
+          <li class="section-card card glass-card">
+            <figure class="card-img">
+              <img src="./assets/images/work-1.jpg" alt="social media icon" />
+            </figure>
+            <div class="card-content text-center">
+              <h3 class="card-title text-capitalize">feasibility analysis</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quibusdam.
+              </p>
+            </div>
+          </li>
+          <li class="section-card card glass-card">
+            <figure class="card-img">
+              <img src="./assets/images/work-2.jpg" alt="social media icon" />
+            </figure>
+            <div class="card-content text-center">
+              <h3 class="card-title text-capitalize">budget</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quibusdam.
+              </p>
+            </div>
+          </li>
+          <li class="section-card card glass-card">
+            <figure class="card-img">
+              <img src="./assets/images/work-3.jpg" alt="social media icon" />
+            </figure>
+            <div class="card-content text-center">
+              <h3 class="card-title text-capitalize">campaign</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, quibusdam.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-primary">
+          <span>see more</span>
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </section>
     </main>
+
+    <!-- #---------- START FOOTER ----------# -->
+    <footer class="section footer-section">
+      <div class="container">
+        <div class="footer-brand-area">
+          <figure class="brand-logo">
+            <img src="./assets/images/logo.svg" alt="Digimore" />
+          </figure>
+          <p class="footer-brand-text section-subtitle">
+            Digimore is a digital marketing agency that helps you to promote
+            your business, increase traffic, and brand awareness.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+            </a>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+            </a>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+            </a>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+              <p>123, Main Street, New York, NY 10030</p>
+            </div>
+            <div class="contact-info-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <p>+1 234 567 890</p>
+            </div>
+            <form action="" class="form-group">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="form-input"
+              />
+              <button class="btn btn-secondary">Get started</button>
+            </form>
+          </div>
+        </div>
+        <ul class="footer-links">
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">Work with us</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">advertise with us</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">support us</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">business advices</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">About us</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">Report a bug</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">private coaching</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">Contact us</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">Our Works</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">our commitment</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" class="footer-link">our team</a>
+          </li>
+        </ul>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2021 Digimore. All rights reserved. | developed by
+            <a href="" target="_blank" class="dev-link">dulbey.</a>
+          </p>
+          <p class="terms-and-conditions">
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- #---------- END FOOTER ----------# -->
 
     <!-- ion-icon script -->
     <script
