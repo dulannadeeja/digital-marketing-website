@@ -275,6 +275,7 @@ button:is(:hover, :focus-visible, :focus) {
 
 .card.glass-card{
   background: var(--glass-card-bg-color);
+  --webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: var(--border-radius-md);
   border: 1px solid var(--glass-card-border-color);
@@ -528,6 +529,7 @@ header .navbar{
 
 header .navbar.active.card.glass-card{
   background: var(--glass-card-bg-color-2);
+  --webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   padding: 2em 1em;
 }
